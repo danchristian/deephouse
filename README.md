@@ -11,7 +11,7 @@ The homepage will be a collection of items pulled from my SoundCloud and Instagr
 
 - Pull tracks from a given playlist from SoundCloud
 - Pull media from Instagram account
-- Spit out posts into homepage
+- Spit out items into homepage
 
 ## Future Improvements 
 
