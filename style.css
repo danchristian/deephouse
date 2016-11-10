@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: hsl(330, 4%, 10%);
+  background-color: hsl(0, 0%, 96%);
+}
+
+header {
+  padding: 12px 12px 0;
+}
+
+.logo {
+  width: 102px;
+}
+
+.mixes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mix {
+  max-width: 400px;
+  margin-bottom: 32px;
+  padding: 0;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.mix img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+audio {
+  width: 100%;
+}
+
+.mix__content {
+  padding: 24px;
+  text-align: center;
+}
+
+.mix__author {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: lowercase;
+  color: hsl(352, 81%, 59%);
+}
+
+.link {
+  position: relative;
+}
+
+.link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: hsl(352, 81%, 59%);
+  visibility: hidden;
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.link:hover:before {
+  visibility: visible;
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.mix__title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.mix__title a {
+  text-decoration: none;
+  color: hsl(330, 4%, 10%);
+}
+
+@media all and (min-width: 720px) {
+  header {
+    padding: 32px 32px 0;
+  }
+  .logo {
+    width: 202px;
+  }
+  main {
+    padding: 32px 16px;
+  }
+  .mixes {
+    justify-content: flex-start;
+  }
+  .mix {
+    margin: 16px;
+  }
+}
